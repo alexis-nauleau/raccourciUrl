@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #5272ef;
+}
+
+.wrapper {
+    width: 496px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px 25px 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper :where(.title, .detail) {
+    display: flex;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.title img {
+    width: 30px;
+}
+
+.content p {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.content input {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+    width: 80%;
+    height: 35px;
+    padding: 3px;
+}
+
+input ::placeholder {
+    color: rgb(175, 175, 175);
+}
+.detail {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyBtn img {
+    min-width: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+}
